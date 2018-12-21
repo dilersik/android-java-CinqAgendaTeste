@@ -1,7 +1,3 @@
-# Bem-vindo ao teste Android da CINQ!
-
-Aqui, iremos avaliar suas capacidades técnicas referentes à vaga a qual você se candidatou.
-
 A premissa deste teste é desenvolver um aplicativo onde seja possível realizar um cadastro de usuário, informando E-mail e Senha, e a partir deste cadastro, ser possível entrar na aplicação, realizando um processo de Autenticação.
 Na finalização do teste, deve-se fazer um PUSH do código alterado para a Branch informada no E-mail, juntamente do APK compilado para a realização dos testes (o APK pode estar em uma pasta chamada /dist).
 
