@@ -1,51 +1,50 @@
-A premissa deste teste é desenvolver um aplicativo onde seja possível realizar um cadastro de usuário, informando E-mail e Senha, e a partir deste cadastro, ser possível entrar na aplicação, realizando um processo de Autenticação.
-Na finalização do teste, deve-se fazer um PUSH do código alterado para a Branch informada no E-mail, juntamente do APK compilado para a realização dos testes (o APK pode estar em uma pasta chamada /dist).
+The premise of this test is to develop an application where it is possible to perform a user registration, informing E-mail and Password, and from this register, it is possible to enter the application, performing an Authentication process.
 
-Os requisitos mínimos/esperados para a entrega do desafio estão listados abaixo:
+The minimum / expected requirements for challenge delivery are listed below:
 
-	1 - Desenvolver uma aplicação utilizando os seguintes padrões:
-		Arquitetura MVP
-		SQLite
-		Storage Preferences
-		Conexão HTTP - REST
-		
-	2 - Desenvolver uma tela onde seja possível realizar o Login, contendo os seguintes campos:
-		E-mail
-		Senha
-		Botão para Entrar
-		Link para a Tela de Cadastro
-		
-	3 - Desenvolver uma tela onde seja possível realizar o cadastro do usuário, persistindo na base local do APP (SQLite), contendo os seguintes campos:
-		E-mail
-		Nome
-		Senha
-		Botão para Salvar
-		
-	4 - Desenvolver uma tela inicial, após o Login, onde seja possível visualizar as seguintes informações:
-		Nome do Usuário Logado
-		Lista de Usuários cadastrados na Aplicação
-		Possibilidade de filtrar a lista acima
-		Botão para Adicionar Novos Usuários, redirecionando para a tela do Passo 2
-		Botão para Editar Usuários, redirecionando para a tela do Passo 2
-		Botão para Excluir um Usuário, dando uma confirmação antes de realizar a ação
-		
-	5 - Na tela inicial, deve-se apresentar um Menu, com as opções:
-		Home
-		Lista de Albums
-		
-	6 - Desenvolver uma tela para a Lista de Albums, contendo os seguintes campos:
-		Utilizar um adaptar na lista, exibindo apenas o título
-		
-Regras de Negócio
-	
-	1 - Tipos de Dados:
-		E-mail  	String(50) Not Null
-		Nome  		String(50) Not Null
-		Senha 	 	String(50) Not Null
-		
-	2 - Na tela de Login, dar feedback de campos obrigatórios, e informar usuário sobre credenciais inválidas
-	3 - Na tela de Cadastro, dar feedback de campos obrigatórios, e mensagem de sucesso quando houver tal
-	4 - Na tela inicial, o campo de filtro deve ser do tipo texto, com tamanho máximo de 50 caracteres; em tempo real de digitação, a lista deve ser atualizada
-	5 - Ao Editar um usuário, não deve ser possível mudar o E-mail, somente Nome e Senha
-	6 - Ao Excluir um usuário, se o registro à ser excluído for o mesmo do usuário logado, deve haver um feedback impedindo a ação
-	7 - Na tela de Lista de Albums, as entidades à serem exibidas deverão vir do seguinte endereço: https://jsonplaceholder.typicode.com/albums, utilizando protocolo HTTP
+1 - Develop an application using the following standards:
+MVP Architecture 
+SQLite
+Storage Preferences
+HTTP connection - REST
+
+2 - Develop a screen where it is possible to perform the Login, containing the following fields:
+Email
+password
+Login button
+Link to the Registration Screen
+
+3 - Develop a screen where it is possible to register the user, persisting in the App's local database (SQLite), containing the following fields:
+Email
+Name
+password
+Save button
+
+4 - Develop a home screen, after Login, where you can view the following information:
+Username Password
+List of Registered Users in the Application
+Ability to filter the above list
+Button to Add New Users, redirecting to the screen of Step 2
+Edit Users button, redirecting to the screen in Step 2
+Button to Delete a User, giving a confirmation before performing the action
+
+5 - In the initial screen a menu must be presented with the following options:
+Home
+Album List
+
+6 - Develop a screen for the Album List containing the following fields:
+Use an adapter in the list displaying only the title
+
+Business rules
+
+1 - Data Types:
+E-mail String (50) Not Null
+Name String (50) Not Null
+Password String (50) Not Null
+
+2 - On Login screen give feedback of required fields and inform user about invalid credentials
+3 - In the Sign Up screen give feedback of required fields and message of success when there is such
+4 - In the initial screen, the filter field must be of type text with maximum size of 50 characters; in real-time typing, the list must be updated;
+5 - When editing a user it should not be possible to change the E-mail, only Name and Password
+6 - When deleting a user, if the record to be deleted is the same as the logged in user, there should be feedback preventing the action
+7 - On the Album List screen, the entities to be displayed should come from the following address: https://jsonplaceholder.typicode.com/albums, using HTTP protocol
